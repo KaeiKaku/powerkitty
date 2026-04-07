@@ -1,0 +1,93 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+	--container-height-0: 3rem;
+}
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	scrollbar-color: white transparent;
+	scroll-behavior: smooth;
+	overscroll-behavior: contain;
+}
+
+body {
+	font-size: 16px;
+	font-family:
+		system-ui,
+		-apple-system,
+		BlinkMacSystemFont,
+		'PingFang SC',
+		'Helvetica Neue',
+		'Segoe UI Variable',
+		'Segoe UI',
+		'Microsoft YaHei UI',
+		'Microsoft YaHei',
+		'Noto Sans SC',
+		'Source Han Sans SC',
+		'Roboto',
+		'Apple Color Emoji',
+		'Segoe UI Emoji',
+		sans-serif;
+	display: grid;
+	grid-template-columns: 20rem 1fr;
+	grid-template-rows: 3rem 1fr;
+	width: 100dvw;
+	height: 100dvh;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+button {
+	cursor: pointer;
+}
+
+img,
+video {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+button,
+textarea,
+select,
+input {
+	field-sizing: content;
+}
+
+button,
+input,
+select,
+textarea {
+	font: inherit;
+	color: inherit;
+	background: transparent;
+	border: none;
+	outline: none;
+}
+
+::-webkit-scrollbar {
+	display: none;
+}
+
+.scrollable {
+	overflow-y: auto;
+	overscroll-behavior: contain;
+}
+
+[hidden] {
+	display: none !important;
+}
