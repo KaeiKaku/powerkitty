@@ -1,21 +1,17 @@
 <script lang="ts">
+	import ChatTextAreaContainer from '$lib/components/chat_right_container/chat_textarea_conatiner/chatTextAreaContainer.svelte';
 </script>
 
 <div class="chatRightContainer">
 	<div class="header">header</div>
-	<div
-		class="chatContainer
-    "
-	>
+	<div class="chatContainer">
 		{#each { length: 10 } as _, i}
 			<div style="height: 100%; background: linear-gradient(blue, #fff);"></div>
 			<div style="height: 100%; background: linear-gradient(red, #fff);"></div>
 		{/each}
 	</div>
 	<div class="footer">
-		<div class="textareaContainer">
-			<textarea></textarea>
-		</div>
+		<ChatTextAreaContainer />
 	</div>
 </div>
 
@@ -43,22 +39,5 @@
 		min-height: var(--container-height-0);
 		flex-shrink: 0;
 		padding: 0.5rem;
-	}
-
-	.textareaContainer {
-		margin: auto;
-		padding: 1rem;
-		max-width: var(--container-width-max);
-		min-height: var(--container-height-2);
-		border-radius: 0.5rem;
-		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-	}
-
-	textarea {
-		width: 100%;
-		max-height: 20rem;
-		overflow-y: auto;
-		resize: none;
-		field-sizing: content;
 	}
 </style>
