@@ -1,6 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
 	--container-height-0: 3rem;
+	--container-height-1: 6rem;
+	--container-height-2: 9rem;
+	--container-width-max: 50rem;
 }
 
 *,
@@ -9,9 +12,10 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	scrollbar-color: white transparent;
 	scroll-behavior: smooth;
 	overscroll-behavior: contain;
+	scrollbar-width: thin;
+	scrollbar-color: rgba(0, 0, 0, 0.15) transparent;
 }
 
 body {
@@ -79,13 +83,26 @@ textarea {
 	outline: none;
 }
 
-::-webkit-scrollbar {
-	display: none;
-}
-
 .scrollable {
 	overflow-y: auto;
 	overscroll-behavior: contain;
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+}
+
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(0, 0, 0, 0.15);
+	border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(0, 0, 0, 0.3);
 }
 
 [hidden] {
