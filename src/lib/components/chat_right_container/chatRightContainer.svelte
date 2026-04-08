@@ -1,5 +1,8 @@
 <script lang="ts">
 	import ChatTextAreaContainer from '$lib/components/chat_right_container/chat_textarea_conatiner/chatTextAreaContainer.svelte';
+
+	import { createStatusBarContext } from '$lib/components/top_status_bar/topStatusBarContext';
+	createStatusBarContext();
 </script>
 
 <div class="chatRightContainer">
