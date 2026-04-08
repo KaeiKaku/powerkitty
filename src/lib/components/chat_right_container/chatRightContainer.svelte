@@ -26,7 +26,6 @@
 
 	.header {
 		line-height: var(--container-height-0);
-		background: #ddd;
 		flex-shrink: 0;
 	}
 
@@ -36,9 +35,9 @@
 	}
 
 	.footer {
-		min-height: var(--container-height-2);
+		min-height: var(--container-height-1-gap);
+		margin-bottom: 1rem;
 		flex-shrink: 0;
-		padding: 0.5rem;
 		position: relative;
 	}
 </style>

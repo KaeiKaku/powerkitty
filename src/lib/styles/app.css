@@ -2,6 +2,7 @@
 :root {
 	--container-height-0: 3rem;
 	--container-height-1: 6rem;
+	--container-height-1-gap: 7rem;
 	--container-height-2: 9rem;
 	--container-width-max: 50rem;
 }
@@ -38,7 +39,6 @@ body {
 		sans-serif;
 	display: grid;
 	grid-template-columns: 20rem 1fr;
-	grid-template-rows: 3rem 1fr;
 	width: 100dvw;
 	height: 100dvh;
 	overflow: hidden;
@@ -66,13 +66,6 @@ video {
 }
 
 button,
-textarea,
-select,
-input {
-	field-sizing: content;
-}
-
-button,
 input,
 select,
 textarea {
@@ -81,6 +74,7 @@ textarea {
 	background: transparent;
 	border: none;
 	outline: none;
+	padding: 0;
 }
 
 .scrollable {
