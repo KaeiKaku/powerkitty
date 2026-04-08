@@ -5,10 +5,11 @@
 <div class="chatRightContainer">
 	<div class="header">header</div>
 	<div class="chatContainer">
-		{#each { length: 10 } as _, i}
+		{#each { length: 10 } as _, key (key)}
 			<div style="height: 100%; background: linear-gradient(blue, #fff);"></div>
 			<div style="height: 100%; background: linear-gradient(red, #fff);"></div>
 		{/each}
+		<h1>last message</h1>
 	</div>
 	<div class="footer">
 		<ChatTextAreaContainer />
@@ -20,7 +21,6 @@
 		display: flex;
 		flex-direction: column;
 		overflow: hidden;
-		background-color: white;
 		height: 100%;
 	}
 
@@ -36,8 +36,9 @@
 	}
 
 	.footer {
-		min-height: var(--container-height-0);
+		min-height: var(--container-height-2);
 		flex-shrink: 0;
 		padding: 0.5rem;
+		position: relative;
 	}
 </style>

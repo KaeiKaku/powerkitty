@@ -6,17 +6,21 @@
 </script>
 
 <div class="chatTextAreaContainer">
-	<textarea class="chatInputTextarea" ninput={(e) => syncHeight(e.currentTarget)}></textarea>
+	<textarea class="chatInputTextarea" oninput={(e) => syncHeight(e.currentTarget)}></textarea>
 </div>
 
 <style>
 	.chatTextAreaContainer {
-		margin: auto;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
 		padding: 1rem;
-		max-width: var(--container-width-max);
+		width: var(--container-width-max);
 		min-height: var(--container-height-2);
 		border-radius: 0.5rem;
 		box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+		background-color: white;
 	}
 
 	.chatInputTextarea {
